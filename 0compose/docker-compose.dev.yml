@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+
+  dds:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    environment:
+      - PROJECT_ROOT=/usr/src/app
+    volumes:
+      - ../source:/usr/src/app
+    ports:
+      - 8000:8000
+      - 6800:6800
+    command: bash -c "tail -f /dev/null"
+
+# networks:
+  # back-tier:
+  # front-tier:
+# volumes:
+  # db-data:
