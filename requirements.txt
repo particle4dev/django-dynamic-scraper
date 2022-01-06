@@ -1,5 +1,5 @@
 Django>=1.8,<1.10
-Celery==3.1.20
+Celery==5.2.2
 django-celery==3.1.17
 Scrapy>=1.1,<1.2
 scrapy-djangoitem>=1.1.1,<1.2
